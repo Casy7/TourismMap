@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Load data from an external GeoJSON file</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+        type="text/css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        // TO MAKE THE MAP APPEAR YOU MUST
+        // ADD YOUR ACCESS TOKEN FROM
+        // https://account.mapbox.com
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2FzeTciLCJhIjoiY2s1aWl5MXV4MGI5dDNvbW41bm82OGpmdyJ9.t3Er5THaXs9H0hH2JSp-Ww';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/satellite-v9', // style URL
+            zoom: 7, // starting zoom
+            center: [138.043, 35.201] // starting center
+        });
+
+        map.on('load', () => {
+           
+            /*
+            var customData = {
+                features: [
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.12708055555533,
+                                42.89316111111133
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.146483333333,
+                                42.865516666667
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.104584537037,
+                                    43.05970981481483
+                                ],
+                                [
+                                    43.146483333333,
+                                    42.865516666667
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 - \u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12708055555533,
+                                    42.89316111111133
+                                ],
+                                [
+                                    43.146483333333,
+                                    42.865516666667
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.11539722222201,
+                                42.90028888888901
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.11539722222201,
+                                    42.90028888888901
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12708055555533,
+                                    42.89316111111133
+                                ],
+                                [
+                                    43.11539722222201,
+                                    42.90028888888901
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.119361111111,
+                                42.913677777778
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.119361111111,
+                                    42.913677777778
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12708055555533,
+                                    42.89316111111133
+                                ],
+                                [
+                                    43.119361111111,
+                                    42.913677777778
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.11001479166663,
+                                42.948920138888745
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.093827777778,
+                                42.961044444444
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.093827777778,
+                                    42.961044444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.093827777778,
+                                    42.961044444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.094336111111,
+                                42.956808333333
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.094336111111,
+                                    42.956808333333
+                                ],
+                                [
+                                    43.094336111111,
+                                    42.956808333333
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 \u0412\u0430\u0440\u0438\u0430\u043d\u0442 - \u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.094336111111,
+                                    42.956808333333
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.096522222222,
+                                42.965522222222
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.096522222222,
+                                    42.965522222222
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.096522222222,
+                                    42.965522222222
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.11539722222201,
+                                42.90028888888901
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12708055555533,
+                                    42.89316111111133
+                                ],
+                                [
+                                    43.11539722222201,
+                                    42.90028888888901
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.11539722222201,
+                                    42.90028888888901
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.11126388888901,
+                                42.979019444444
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.04635625,
+                                    42.969425
+                                ],
+                                [
+                                    43.11126388888901,
+                                    42.979019444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u0440.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.11126388888901,
+                                    42.979019444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.12512,
+                                42.94764
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12966333333333,
+                                    42.94679666666667
+                                ],
+                                [
+                                    43.12512,
+                                    42.94764
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0443\u043b\u0430\u043a - \u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.12512,
+                                    42.94764
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.119361111111,
+                                42.913677777778
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12708055555533,
+                                    42.89316111111133
+                                ],
+                                [
+                                    43.119361111111,
+                                    42.913677777778
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.119361111111,
+                                    42.913677777778
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.12429,
+                                42.96736
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.12966333333333,
+                                    42.94679666666667
+                                ],
+                                [
+                                    43.12429,
+                                    42.96736
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0443\u043b\u0430\u043a - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.12429,
+                                    42.96736
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.068186919753,
+                                42.98789213580244
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.054051944444,
+                                42.9438
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.134714309523716,
+                                    42.707106523809564
+                                ],
+                                [
+                                    43.054051944444,
+                                    42.9438
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0411\u0435\u0437\u044b\u043c\u044f\u043d\u043d\u044b\u0439 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.054051944444,
+                                    42.9438
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.093827777778,
+                                42.961044444444
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.093827777778,
+                                    42.961044444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.093827777778,
+                                    42.961044444444
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.096522222222,
+                                42.965522222222
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.11001479166663,
+                                    42.948920138888745
+                                ],
+                                [
+                                    43.096522222222,
+                                    42.965522222222
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.096522222222,
+                                    42.965522222222
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.042833,
+                                42.967133
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.03971644444433,
+                                    42.978171185185325
+                                ],
+                                [
+                                    43.042833,
+                                    42.967133
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.042833,
+                                    42.967133
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.043783,
+                                42.96285
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.03971644444433,
+                                    42.978171185185325
+                                ],
+                                [
+                                    43.043783,
+                                    42.96285
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.043783,
+                                    42.96285
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.032533333333,
+                                43.00453055555599
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.03971644444433,
+                                    42.978171185185325
+                                ],
+                                [
+                                    43.032533333333,
+                                    43.00453055555599
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.032533333333,
+                                    43.00453055555599
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.08862,
+                                43.04192
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.099401666666665,
+                                    43.055393333333335
+                                ],
+                                [
+                                    43.08862,
+                                    43.04192
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0428\u0430\u0443\u0440\u0442\u0443 - \u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.08862,
+                                    43.04192
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.10199,
+                                43.02074
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.099401666666665,
+                                    43.055393333333335
+                                ],
+                                [
+                                    43.10199,
+                                    43.02074
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0428\u0430\u0443\u0440\u0442\u0443 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.10199,
+                                    43.02074
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "Point",
+                            coordinates: [
+                                43.059521,
+                                43.023489
+                            ]
+                        },
+                        properties: {
+                            name: "\u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.134714309523716,
+                                    42.707106523809564
+                                ],
+                                [
+                                    43.059521,
+                                    43.023489
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0411\u0435\u0437\u044b\u043c\u044f\u043d\u043d\u044b\u0439 - \u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                        }
+                    },
+                    {
+                        type: "Feature",
+                        geometry: {
+                            type: "LineString",
+                            coordinates: [
+                                [
+                                    43.068186919753,
+                                    42.98789213580244
+                                ],
+                                [
+                                    43.059521,
+                                    43.023489
+                                ]
+                            ]
+                        },
+                        properties: {
+                            name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                        }
+                    }
+                ],
+                type: "FeatureCollection"
+            };
+            */
+
+            /*
+            function forwardGeocoder(query) {
+                var matchingFeatures = [];
+                for (var i = 0; i < customData.features.length; i++) {
+                    var feature = customData.features[i];
+                    feature["place_name"] = "🌲 " + feature.properties.name;
+                    feature["center"] = feature.geometry.coordinates;
+                    feature["place_type"] = ["park"];
+                    matchingFeatures.push(feature);
+                }
+                return matchingFeatures;
+            }
+            map.addControl(
+                new MapboxGeocoder({
+                    accessToken: mapboxgl.accessToken,
+                    localGeocoder: forwardGeocoder,
+                    zoom: 14,
+                    placeholder: "Введите адрес",
+                    mapboxgl: mapboxgl
+                })
+            );
+            map.addLayer({
+                id: "lk_1",
+                type: "symbol",
+                source: {
+                    type: "geojson",
+                    data: {
+                        type: "FeatureCollection",
+                        features: [
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.12708055555533,
+                                        42.89316111111133
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.146483333333,
+                                        42.865516666667
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.104584537037,
+                                            43.05970981481483
+                                        ],
+                                        [
+                                            43.146483333333,
+                                            42.865516666667
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 - \u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12708055555533,
+                                            42.89316111111133
+                                        ],
+                                        [
+                                            43.146483333333,
+                                            42.865516666667
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u0411\u0430\u0448\u0438\u043b\u044c"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.11539722222201,
+                                        42.90028888888901
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.11539722222201,
+                                            42.90028888888901
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12708055555533,
+                                            42.89316111111133
+                                        ],
+                                        [
+                                            43.11539722222201,
+                                            42.90028888888901
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.119361111111,
+                                        42.913677777778
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.119361111111,
+                                            42.913677777778
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12708055555533,
+                                            42.89316111111133
+                                        ],
+                                        [
+                                            43.119361111111,
+                                            42.913677777778
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.11001479166663,
+                                        42.948920138888745
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.093827777778,
+                                        42.961044444444
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.093827777778,
+                                            42.961044444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.093827777778,
+                                            42.961044444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.094336111111,
+                                        42.956808333333
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.094336111111,
+                                            42.956808333333
+                                        ],
+                                        [
+                                            43.094336111111,
+                                            42.956808333333
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 \u0412\u0430\u0440\u0438\u0430\u043d\u0442 - \u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.094336111111,
+                                            42.956808333333
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0430\u0443\u043d\u0430\u0441 \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.096522222222,
+                                        42.965522222222
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.096522222222,
+                                            42.965522222222
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.096522222222,
+                                            42.965522222222
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.11539722222201,
+                                        42.90028888888901
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12708055555533,
+                                            42.89316111111133
+                                        ],
+                                        [
+                                            43.11539722222201,
+                                            42.90028888888901
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.11539722222201,
+                                            42.90028888888901
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041c\u0410\u0414\u0418"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.11126388888901,
+                                        42.979019444444
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.04635625,
+                                            42.969425
+                                        ],
+                                        [
+                                            43.11126388888901,
+                                            42.979019444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u0440.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.11126388888901,
+                                            42.979019444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u0421\u0435\u043c\u0438"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.12512,
+                                        42.94764
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12966333333333,
+                                            42.94679666666667
+                                        ],
+                                        [
+                                            43.12512,
+                                            42.94764
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0443\u043b\u0430\u043a - \u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.12512,
+                                            42.94764
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0438\u0442\u043b\u043e\u0434"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.119361111111,
+                                        42.913677777778
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12708055555533,
+                                            42.89316111111133
+                                        ],
+                                        [
+                                            43.119361111111,
+                                            42.913677777778
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0414\u0437\u044b\u043d\u0430\u043b - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.119361111111,
+                                            42.913677777778
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u0443\u043b\u0430\u043a"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.12429,
+                                        42.96736
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.12966333333333,
+                                            42.94679666666667
+                                        ],
+                                        [
+                                            43.12429,
+                                            42.96736
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0443\u043b\u0430\u043a - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.12429,
+                                            42.96736
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.068186919753,
+                                        42.98789213580244
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.054051944444,
+                                        42.9438
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.134714309523716,
+                                            42.707106523809564
+                                        ],
+                                        [
+                                            43.054051944444,
+                                            42.9438
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0411\u0435\u0437\u044b\u043c\u044f\u043d\u043d\u044b\u0439 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.054051944444,
+                                            42.9438
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.093827777778,
+                                        42.961044444444
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.093827777778,
+                                            42.961044444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.093827777778,
+                                            42.961044444444
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. 50 \u043b\u0435\u0442 \u041e\u043a\u0442\u044f\u0431\u0440\u044f"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.096522222222,
+                                        42.965522222222
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.11001479166663,
+                                            42.948920138888745
+                                        ],
+                                        [
+                                            43.096522222222,
+                                            42.965522222222
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041a\u0438\u0442\u043b\u043e\u0434 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.096522222222,
+                                            42.965522222222
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041a\u043e\u043c\u0430\u0440\u043e\u0432\u0430"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.042833,
+                                        42.967133
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.03971644444433,
+                                            42.978171185185325
+                                        ],
+                                        [
+                                            43.042833,
+                                            42.967133
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.042833,
+                                            42.967133
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0412\u0435\u0440\u0445\u043d."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.043783,
+                                        42.96285
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.03971644444433,
+                                            42.978171185185325
+                                        ],
+                                        [
+                                            43.043783,
+                                            42.96285
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.043783,
+                                            42.96285
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041d\u043e\u0432\u0438\u0447\u043a\u043e\u0432 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.032533333333,
+                                        43.00453055555599
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.03971644444433,
+                                            42.978171185185325
+                                        ],
+                                        [
+                                            43.032533333333,
+                                            43.00453055555599
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u041e\u0438\u0448 - \u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.032533333333,
+                                            43.00453055555599
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0414\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0433\u043e"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.08862,
+                                        43.04192
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.099401666666665,
+                                            43.055393333333335
+                                        ],
+                                        [
+                                            43.08862,
+                                            43.04192
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0428\u0430\u0443\u0440\u0442\u0443 - \u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.08862,
+                                            43.04192
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u041e\u0440\u0442\u043e\u043a\u0430\u0440\u0430 \u0417."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.10199,
+                                        43.02074
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.099401666666665,
+                                            43.055393333333335
+                                        ],
+                                        [
+                                            43.10199,
+                                            43.02074
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0428\u0430\u0443\u0440\u0442\u0443 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.10199,
+                                            43.02074
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0422\u0438\u0445\u0442\u0435\u043d\u0433\u0435\u043d \u0412."
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "Point",
+                                    coordinates: [
+                                        43.059521,
+                                        43.023489
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.134714309523716,
+                                            42.707106523809564
+                                        ],
+                                        [
+                                            43.059521,
+                                            43.023489
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0411\u0435\u0437\u044b\u043c\u044f\u043d\u043d\u044b\u0439 - \u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                                }
+                            },
+                            {
+                                type: "Feature",
+                                geometry: {
+                                    type: "LineString",
+                                    coordinates: [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.059521,
+                                            43.023489
+                                        ]
+                                    ]
+                                },
+                                properties: {
+                                    name: "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                                }
+                            }
+                        ]
+
+                    }
+                },
+                layout: {
+                    "icon-image": "{icon}-15",
+                    "icon-allow-overlap": true
+                }
+            });
+
+            map.addLayer({
+                "id": "l1",
+                "type": "line",
+                "source": {
+                    type: "geojson",
+                    data: {
+                        type: "FeatureCollection",
+                        features: [
+                            {
+                                "type": "Feature",
+                                "geometry": {
+                                    "type": "LineString",
+                                    "coordinates": [
+                                        [
+                                            43.068186919753,
+                                            42.98789213580244
+                                        ],
+                                        [
+                                            43.059521,
+                                            43.023489
+                                        ]
+                                    ]
+                                },
+                                "properties": {
+                                    "name": "\u043b\u0435\u0434.\u0426\u0430\u043d\u043d\u0435\u0440 - \u043f\u0435\u0440. \u0427\u044e\u0440\u043b\u0435\u043d\u0438\u0441\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439"
+                                }
+                            }
+                        ]
+                    }
+                },
+                'layout': {},
+                'paint': {
+                    'line-color': '#ff0000',
+                    'line-width': 3
+                }
+            });
+            */
+            @@@REPLACETHISTEXT@@@
+        });
+        
+        /*
+                map.addLayer({
+                    "id": "l1",
+                    "type": "line",
+                    "source": {
+                        type: "geojson",
+                        data: {
+                            type: "FeatureCollection",
+                            features: [
+
+                            ]
+                        }
+                    },
+                    'layout': {},
+                    'paint': {
+                        'line-color': '#000',
+                        'line-width': 3
+                    }
+                });
+        */
+
+    </script>
+
+</body>
+
+</html>

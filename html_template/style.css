@@ -1,0 +1,67 @@
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#boton-mapa-api {
+    z-index: 1000;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 400px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#apartado-api {
+    width: 400px;
+    height: 400px;
+    z-index: 900;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 2px 9px 11px 0px rgba(0, 0, 0, 0.07);
+}
+
+/*comienzo botón estandar*/
+
+.boton-general {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+    padding: 15px;
+    margin: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 50px;
+    /*gradiente*/
+    background: rgb(123, 228, 149);
+    background: linear-gradient(175deg, rgba(123, 228, 149, 1) 32%, rgba(64, 185, 184, 1) 100%);
+    transition: all 0.3s ease-in-out;
+    /*sombras*/
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 7px 6px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*estados del botón*/
+
+.boton-general:hover {
+    letter-spacing: 2.5px;
+    border-radius: 10px;
+}
+
+.boton-general:focus {
+    outline: 0;
+}

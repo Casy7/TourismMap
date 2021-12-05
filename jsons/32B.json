@@ -1,0 +1,51 @@
+{
+    "passes": [
+        {
+            "name": "пер. 1",
+            "cathegory": "1А",
+            "height": "3270",
+            "heels_type": "",
+            "connects_with": "р. A - р. B",
+            "link": "'https://westra.ru",
+            "coords": "(3 8 0)"
+        },
+        {
+            "name": "пер. 2",
+            "cathegory": "1Б",
+            "height": "2245",
+            "heels_type": "",
+            "connects_with": "р. B - р. C",
+            "link": "'https://westra.ru",
+            "coords": "(3 10 0)"
+        },
+        {
+            "name": "пер. 3",
+            "cathegory": "1А",
+            "height": "2557",
+            "heels_type": "",
+            "connects_with": "р. C - р. D",
+            "link": "'https://westra.ru",
+            "coords": "(1 10 0)"
+        },
+        {
+            "name": "пер. 4",
+            "cathegory": "1А",
+            "height": "2557",
+            "heels_type": "",
+            "connects_with": "р. D - р. A",
+            "link": "'https://westra.ru",
+            "coords": "(1 8 0)"
+        },
+        {
+            "name": "пер. 5",
+            "cathegory": "1А",
+            "height": "2557",
+            "heels_type": "",
+            "connects_with": "р. B - р. F",
+            "link": "'https://westra.ru",
+            "coords": "(2 9 0)"
+        }
+
+
+    ]
+}
