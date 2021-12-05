@@ -1,0 +1,515 @@
+{"passes":[{
+"name" : "пер. 12 фестиваля МС", "cathegory" : "2Б", "height" : "3850", "heels_type" : "сн-лд", "connects_with" : "р.Скилири (р.Цхеледула, р.Цхенисцкали) - р.Лайлачала (р.Ингури)", "link" : "'https://westra.ru/passes/Passes/12483", "coords" : "(42.55555 42.917533 0)"
+}, 
+{
+"name" : "пер. 300 лет Российскому Флоту", "cathegory" : "2Б*", "height" : "3650", "heels_type" : "сн-лд", "connects_with" : "р.Кичкинекол (р.Индрюкой, р.Гондарай, р.Махар) - ледн.Гвандра Зап., р.Актебе (р.Индрюкой, р.Гондарай, р.Махар)", "link" : "'https://westra.ru/passes/Passes/3593", "coords" : "(42.07422 43.20932 0)"
+}, 
+{
+"name" : "пер. 50 лет СОАССР", "cathegory" : "2Б", "height" : "3653", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/8676", "coords" : "(44.1367596803 42.7050654678 0)"
+}, 
+{
+"name" : "пер. Moondark", "cathegory" : "2Б*", "height" : "3963", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/22", "coords" : "(42.89437498779999 43.2446394525 0)"
+}, 
+{
+"name" : "пер. Акбек Западный", "cathegory" : "2Б", "height" : "3500", "heels_type" : "лд-ск", "connects_with" : "ледн.Джугутурлючат Вост., р.Домбай-Ельген - ледн.Акбек, р.Ацапш-Ацгара", "link" : "'https://westra.ru/passes/Passes/3490", "coords" : "(41.665672222222 43.233066666667 0)"
+}, 
+{
+"name" : "пер. Аксаут Восточный", "cathegory" : "2Б", "height" : "3400", "heels_type" : "лд-ск", "connects_with" : "ледн.Джалаучат, р.Джалаучат (р.Аксаут) - р.Чхалта", "link" : "'https://westra.ru/passes/Passes/3476", "coords" : "(41.46974 43.30007 0)"
+}, 
+{
+"name" : "пер. Атсыз", "cathegory" : "2Б", "height" : "4050", "heels_type" : "сн-лд-ск", "connects_with" : "лед.Шаурту - лед.Салы-нанчиран (лед.Безенги). Между в.Атсыз и в.Шаурту", "link" : "'https://westra.ru/passes/Passes/345", "coords" : "(43.06759 43.09874 0)"
+}, 
+{
+"name" : "пер. Бадорку", "cathegory" : "2Б", "height" : "3990", "heels_type" : "лд", "connects_with" : "лед.Ю.Чат (лед.Кулак) - лед.Башиль. Две седловины - Бодорку и Бодорку северный.", "link" : "'https://westra.ru/passes/Passes/3709", "coords" : "(42.93174 43.15351 0)"
+}, 
+{
+"name" : "пер. Бадорку Северный", "cathegory" : "2Б", "height" : "4000", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/15494", "coords" : "(42.932058333333 43.1562 0)"
+}, 
+{
+"name" : "пер. Бартуй С.", "cathegory" : "2Б", "height" : "3500", "heels_type" : "сн-лд", "connects_with" : "лед.Бартуй - лед.Киртишо", "link" : "'https://westra.ru/passes/Passes/3778", "coords" : "(43.61034 42.83308 0)"
+}, 
+{
+"name" : "пер. Башкара", "cathegory" : "2Б*", "height" : "3550", "heels_type" : "лд-ск", "connects_with" : "лед.Башкара - Джанту-ганское плато. Между в.Джантуган и в.Башкара", "link" : "'https://westra.ru/passes/Passes/313", "coords" : "(42.74407 43.1814 0)"
+}, 
+{
+"name" : "пер. Бетала Калмыкова", "cathegory" : "2Б", "height" : "3700", "heels_type" : "лд-ск", "connects_with" : "ледн.Гидан (ледн.№440), ЛП р.Укю (р.Думала, р.Черек Безенгийский) - ледн.Укю, р.Укю (р.Думала, р.Черек Безенгийский)", "link" : "'https://westra.ru/passes/Passes/101", "coords" : "(43.222633333333 43.102583333333 0)"
+}, 
+{
+"name" : "пер. Бжедух", "cathegory" : "2Б", "height" : "3480", "heels_type" : "сн-ск-ос", "connects_with" : "лед.Кашкаташ -лед.Бжедух", "link" : "'https://westra.ru/passes/Passes/3693", "coords" : "(42.686075 43.183497222222 0)"
+}, 
+{
+"name" : "пер. Бивачный", "cathegory" : "2Б*", "height" : "3920", "heels_type" : "лд-ск", "connects_with" : "лед.Ахсу (лед.Шхельды) - лед.Ю. Шхельдинский", "link" : "'https://westra.ru/passes/Passes/304", "coords" : "(42.60781 43.16421 0)"
+}, 
+{
+"name" : "пер. Бу-Ельген", "cathegory" : "2Б", "height" : "3400", "heels_type" : "лд-ск-сн", "connects_with" : "ледн.Бу-Ельген, р.Бу-Ельген - р.Хецквара", "link" : "'https://westra.ru/passes/Passes/3496", "coords" : "(41.780877777778 43.221063888889 0)"
+}, 
+{
+"name" : "пер. Бу-Ельген - Птыш Южн.", "cathegory" : "2Б*", "height" : "3350", "heels_type" : "сн-ск-лд", "connects_with" : "ледн.Бу-Ельген, р.Бу-Ельген - р.Птыш Южн.", "link" : "'https://westra.ru/passes/Passes/3495", "coords" : "(41.776155555556 43.219188888889 0)"
+}, 
+{
+"name" : "пер. Бурджула Сев.", "cathegory" : "2Б", "height" : "4000", "heels_type" : "сн-лд", "connects_with" : "Караугомское плато - Верхн.плато лед.З.Караугом - лед. Бурджула", "link" : "'https://westra.ru/passes/Passes/3884", "coords" : "(43.68928 42.78825 0)"
+}, 
+{
+"name" : "пер. Бурджула Южн.", "cathegory" : "2Б", "height" : "3949", "heels_type" : "сн-лд", "connects_with" : "Караугомское плато - Верхн.плато лед.Бокос - лед. Бурджула", "link" : "'https://westra.ru/passes/Passes/3885", "coords" : "(43.696111111111 42.7775 0)"
+}, 
+{
+"name" : "пер. Буревестник Цейский", "cathegory" : "2Б", "height" : "3650", "heels_type" : "сн-лд-ск", "connects_with" : "ледн.Донисарцете Зап., р.Даргомдон (р.Сонгутидон, р.Айгамугодон) - р.Цейдон", "link" : "'https://westra.ru/passes/Passes/16120", "coords" : "(43.88401 42.81155 0)"
+}, 
+{
+"name" : "пер. Вагичу", "cathegory" : "2Б", "height" : "3800", "heels_type" : "ск-сн-лд", "connects_with" : "р.Шатилисцкали (р.Аргун) - ледн.Вагичу Вост., р.Вагичу (р.Мешехи, р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2390", "coords" : "(45.08804 42.711035 0)"
+}, 
+{
+"name" : "пер. Вадик", "cathegory" : "2Б", "height" : "3700", "heels_type" : "лед", "connects_with" : "В северном отроге ГКХ, соединяет западную и восточную ветви лед. Бартуй. ", "link" : "'https://westra.ru/passes/Passes/16071", "coords" : "(43.623713333333 42.81947 0)"
+}, 
+{
+"name" : "пер. Вахушти-1", "cathegory" : "2Б*", "height" : "3800", "heels_type" : "сн-лд", "connects_with" : "ледн.Айлама Южн., р.Корелдаш (р.Цхенисцкали) - ледн.Нуам-Куан Южн., р.Ингури", "link" : "'https://westra.ru/passes/Passes/3753", "coords" : "(43.14325833333299 42.958444444444 0)"
+}, 
+{
+"name" : "пер. ВДВ", "cathegory" : "2Б", "height" : "3795", "heels_type" : "сн-лд", "connects_with" : "ледн.Галдор Сев. (Хазны Южн.) - ледн.Хазны, р.Хазныдон", "link" : "'https://westra.ru/passes/Passes/14730", "coords" : "(43.531916666667 42.956816666667 0)"
+}, 
+{
+"name" : "пер. Верблюд", "cathegory" : "2Б", "height" : "2650", "heels_type" : "ск-сн-ос", "connects_with" : "р.Киша (Китайка) - лев.приток р.Лаура (р.Мзымта)", "link" : "'https://westra.ru/passes/Passes/7345", "coords" : "(40.349720833333 43.772555555556 0)"
+}, 
+{
+"name" : "пер. Верчинин", "cathegory" : "2Б", "height" : "3375", "heels_type" : "", "connects_with" : "оз. Мал – ущ. Курбан-Дюзи", "link" : "'https://westra.ru/passes/Passes/13674", "coords" : "(40.935939 40.694622 0)"
+}, 
+{
+"name" : "пер. Волга", "cathegory" : "2Б", "height" : "3700", "heels_type" : "сн-лд-ск", "connects_with" : "ледн.Махис, р.Чурочочдоохи (р.Асса) - р.Шатилисцкали (р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2382", "coords" : "(45.06802 42.698791666667 0)"
+}, 
+{
+"name" : "пер. Воробьевский", "cathegory" : "2Б", "height" : "4000", "heels_type" : "сн-лд", "connects_with" : "лед. Уилпатинский - лед. С.Цей", "link" : "'https://westra.ru/passes/Passes/3896", "coords" : "(43.81231 42.77606 0)"
+}, 
+{
+"name" : "пер. Высоцкого", "cathegory" : "2Б", "height" : "3720", "heels_type" : "ск-сн-лд", "connects_with" : "р.Ковгра (р.Асса) - р.Миткурисхорхи (р.Шатилисцкали, р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2377", "coords" : "(45.053343333333 42.687435 0)"
+}, 
+{
+"name" : "пер. Гайдара", "cathegory" : "2Б", "height" : "3482", "heels_type" : "лд-ос", "connects_with" : "р.Лайлачала (р.Ингури) - р.Ласкедура (р.Цхенисцкали)", "link" : "'https://westra.ru/passes/Passes/3765", "coords" : "(42.57618611111101 42.908558333333 0)"
+}, 
+{
+"name" : "пер. Галдор Зап.", "cathegory" : "2Б", "height" : "3750", "heels_type" : "сн-ск", "connects_with" : "ледн.Галдор (р.Хазныдон) - р.Галдоридон (р.Урух)", "link" : "'https://westra.ru/passes/Passes/3838", "coords" : "(43.52825 42.9496 0)"
+}, 
+{
+"name" : "пер. Гарваш", "cathegory" : "2Б", "height" : "3710", "heels_type" : "сн-лд", "connects_with" : "лед.Адырсу (р.Адырсу) - лед.Лекзыр. По сванскому пути к Лекзырскому Кресту", "link" : "'https://westra.ru/passes/Passes/317", "coords" : "(42.80231 43.17257 0)"
+}, 
+{
+"name" : "пер. Гаспаротто", "cathegory" : "2Б", "height" : "3891", "heels_type" : "сн-лд", "connects_with" : "ледн.Рцывашки Вост., р.Рцывашки - ледн.Ахсу, р.Ахсу (р.Карасу, р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/3839", "coords" : "(43.403166666667 42.9879 0)"
+}, 
+{
+"name" : "пер. Гидан", "cathegory" : "2Б", "height" : "4011", "heels_type" : "ск-лд-ос", "connects_with" : "ледн.Гидан (ледн.№440), ЛП р.Укю (р.Думала, р.Черек Безенгийский) - р.Мижирги", "link" : "'https://westra.ru/passes/Passes/3720", "coords" : "(43.204133333333 43.1031 0)"
+}, 
+{
+"name" : "пер. Григора", "cathegory" : "2Б", "height" : "3150", "heels_type" : "ск-лд-ос", "connects_with" : "ледн.Цахвоа Вост., руч.Бешеный (р.Цахвоа) - руч.Григора (р.Безымянка)", "link" : "'https://westra.ru/passes/Passes/3339", "coords" : "(40.598 43.6572 0)"
+}, 
+{
+"name" : "пер. Гюльчи", "cathegory" : "2Б", "height" : "4021", "heels_type" : "сн-лд", "connects_with" : "ледн.Суган Южн., р.Ахсу - ледн.Доппах, р.Орсдон (р.Урух)", "link" : "'https://westra.ru/passes/Passes/3841", "coords" : "(43.43682 42.96462 0)"
+}, 
+{
+"name" : "пер. Далла-Кора", "cathegory" : "2Б", "height" : "3400", "heels_type" : "сн-лд", "connects_with" : "лед.Лекзыр (З. ветвь) - Чатынское плато. Без спуска по ледопаду лед.Чалаат", "link" : "'https://westra.ru/passes/Passes/3688", "coords" : "(42.698416666667 43.163905555556 0)"
+}, 
+{
+"name" : "пер. Дергалина", "cathegory" : "2Б", "height" : "3967", "heels_type" : "ск-лд", "connects_with" : "лед.Мидаграбин - лед.Цариут", "link" : "'https://westra.ru/passes/Passes/3981", "coords" : "(44.3160259611 42.7458416878 0)"
+}, 
+{
+"name" : "пер. Джантуган", "cathegory" : "2Б", "height" : "3460", "heels_type" : "сн-лд", "connects_with" : "лед.Джанкуат (р.Адылсу) - лед.Лекзыр", "link" : "'https://westra.ru/passes/Passes/314", "coords" : "(42.76068 43.18759 0)"
+}, 
+{
+"name" : "пер. Джантуган Восточный", "cathegory" : "2Б", "height" : "3480", "heels_type" : "сн-лд", "connects_with" : "лед.Джанкуат (р.Адылсу) - лед.Лекзыр. Расположен в ГКХ между в.Башкара и в.Гумачи", "link" : "'https://westra.ru/passes/Passes/315", "coords" : "(42.77277 43.18818 0)"
+}, 
+{
+"name" : "пер. Джесарский", "cathegory" : "2Б", "height" : "3600", "heels_type" : "лд-ск", "connects_with" : "ледн.Белалакая, р.Алибек - ледн.Джерский, р.Чхалта", "link" : "'https://westra.ru/passes/Passes/3484", "coords" : "(41.569777777778 43.250922222222 0)"
+}, 
+{
+"name" : "пер. Домбайское седло", "cathegory" : "2Б", "height" : "3600", "heels_type" : "лд-ск", "connects_with" : "р.Птыш - р.Бу-Ёльген", "link" : "'https://westra.ru/passes/Passes/3515", "coords" : "(41.72384 43.2473 0)"
+}, 
+{
+"name" : "пер. Донкина", "cathegory" : "2Б", "height" : "3900", "heels_type" : "сн-лд", "connects_with" : "лед.З.Юном (р.Куллум-кол) - лед.Джайлык (р.Джайлык)", "link" : "'https://westra.ru/passes/Passes/33", "coords" : "(42.88656 43.23739 0)"
+}, 
+{
+"name" : "пер. Дыхниауш", "cathegory" : "2Б", "height" : "3872", "heels_type" : "лд-ск", "connects_with" : "ледн.Безенги, р.Черек Безенгийский - ледн.Башха-ауз (ледн.Дыхсу (Дых-Котю-Бугой)), р.Дыхсу (р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/357", "coords" : "(43.133697 43.014385 0)"
+}, 
+{
+"name" : "пер. Дыхсу", "cathegory" : "2Б", "height" : "3650", "heels_type" : "лд", "connects_with" : "вост ветвь ледн.Айлама (ледн.Дыхсу (Дых-Котю-Бугой)), р.Дыхсу (р.Черек Балкарский) - ледн.№105, ПП р.Дыхсу (р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/15547", "coords" : "(43.255283055556 42.95555 0)"
+}, 
+{
+"name" : "пер. Ёзгюдек-Адсиз", "cathegory" : "2Б", "height" : "3620", "heels_type" : "", "connects_with" : "сев. исток дол. Сыирма (верховья дол. Эмли) - плато Едигель", "link" : "'https://westra.ru/passes/Passes/15205", "coords" : "(35.178916666667 37.7745 0)"
+}, 
+{
+"name" : "пер. Жандарм", "cathegory" : "2Б", "height" : "3521", "heels_type" : "сн-ск", "connects_with" : "р.Адылсу - р.Адырсу. Между в.Чотча и в.Виатау", "link" : "'https://westra.ru/passes/Passes/13", "coords" : "(42.773425 43.2079683333 0)"
+}, 
+{
+"name" : "пер. Желонкина", "cathegory" : "2Б", "height" : "3320", "heels_type" : "сн-лд", "connects_with" : "ледник Чегеркара (№526) и безымянный ледник к св от в. Донгузорун-баши", "link" : "'https://westra.ru/passes/Passes/16232", "coords" : "(42.46368 43.25231 0)"
+}, 
+{
+"name" : "пер. Зап. Плечо Эльбруса", "cathegory" : "2Б*", "height" : "4962", "heels_type" : "лд-ос", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/15835", "coords" : "(42.412783333333 43.3431 0)"
+}, 
+{
+"name" : "пер. Зеркальный", "cathegory" : "2Б", "height" : "3473", "heels_type" : "лд-ск", "connects_with" : "р.Гондарай - р.Махар", "link" : "'https://westra.ru/passes/Passes/14760", "coords" : "(41.969105 43.26477 0)"
+}, 
+{
+"name" : "пер. Интеркосмос", "cathegory" : "2Б", "height" : "3700", "heels_type" : "лед-ск", "connects_with" : "в северном отроге ГКХ и соединяет лед. Восточный Донгуз-Орун и Сев. Донгуз-Орун ", "link" : "'https://westra.ru/passes/Passes/14623", "coords" : "(42.522222222222 43.208752777778 0)"
+}, 
+{
+"name" : "пер. Иська", "cathegory" : "2Б", "height" : "3500", "heels_type" : "сн-ск", "connects_with" : "лед.Иська (р.Караугом) - лед.Кушдарх (р.Бартуй)", "link" : "'https://westra.ru/passes/Passes/3794", "coords" : "(43.658683333333 42.837916666667 0)"
+}, 
+{
+"name" : "пер. К.Кулиева", "cathegory" : "2Б", "height" : "3970", "heels_type" : "сн-лд", "connects_with" : "лед.Болдошке (р.Болдошке) - лед. Ю. Чат (лед.Кулак)", "link" : "'https://westra.ru/passes/Passes/333", "coords" : "(42.95607 43.16353 0)"
+}, 
+{
+"name" : "пер. Казбеги", "cathegory" : "2Б", "height" : "3620", "heels_type" : "ск-ос", "connects_with" : "р.Терек - р.Кистинка (р.Терек)", "link" : "'https://westra.ru/passes/Passes/2327", "coords" : "(44.689808333333 42.667501666667 0)"
+}, 
+{
+"name" : "пер. Калота-Цазги", "cathegory" : "2Б", "height" : "3622", "heels_type" : "лд-ос", "connects_with" : "лед.Цазги - р.Бугультадон", "link" : "'https://westra.ru/passes/Passes/3954", "coords" : "(44.157216388889 42.747275555556 0)"
+}, 
+{
+"name" : "пер. Камнепадный", "cathegory" : "2Б", "height" : "4100", "heels_type" : "лд-ск", "connects_with" : "ледн.Безенги, р.Черек Безенгийский - ледн.Башха-ауз (ледн.Дыхсу (Дых-Котю-Бугой)), р.Дыхсу (р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/356", "coords" : "(43.143127 43.023607 0)"
+}, 
+{
+"name" : "пер. Кара-Кая Южн.", "cathegory" : "2Б", "height" : "3300", "heels_type" : "лд-ск", "connects_with" : "ледн.Каракая Южн., р.Аксаут - ледн.Марух Южн., р.Марух Южн.", "link" : "'https://westra.ru/passes/Passes/3470", "coords" : "(41.41435 43.347233333333 0)"
+}, 
+{
+"name" : "пер. Каракая", "cathegory" : "2Б", "height" : "3480", "heels_type" : "лд-ск", "connects_with" : "лед.Башиль - лед.Лекзыр (В. ветвь). Весной, зимой через нижний ледопад лед.Башиль", "link" : "'https://westra.ru/passes/Passes/320", "coords" : "(42.87535 43.16637 0)"
+}, 
+{
+"name" : "пер. Каракая Восточная", "cathegory" : "2Б*", "height" : "3500", "heels_type" : "ск-лд", "connects_with" : "лед.Башиль - лед.С.Башиль. в северном отроге ГКХ, в восточном гребне г. Каракая.", "link" : "'https://westra.ru/passes/Passes/3708", "coords" : "(42.88045 43.17145 0)"
+}, 
+{
+"name" : "пер. Караты", "cathegory" : "2Б", "height" : "3700", "heels_type" : "ск-сн-лд", "connects_with" : "р.Шатилисцкали (р.Аргун) - р.Миткурисхорхи (р.Шатилисцкали, р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2381", "coords" : "(45.07081 42.687143333333 0)"
+}, 
+{
+"name" : "пер. Касаева Османа", "cathegory" : "2Б*", "height" : "3360", "heels_type" : "сн-лд-ск", "connects_with" : "р.Даут - р.Кичи-Муруджу", "link" : "'https://westra.ru/passes/Passes/14759", "coords" : "(41.881016666667 43.297833333333 0)"
+}, 
+{
+"name" : "пер. Катюша", "cathegory" : "2Б", "height" : "3650", "heels_type" : "лд", "connects_with" : "лед.Айлама (лед.Дыхсу) - лед.Фытнаргин. В с-в гребне. Можно рассматривать как связку из трех перевалов (два - в небольших отрогах) - Катюша В. (N42°56&#039;54.59&quot;E 43°16&#039;8.6&quot;) + Катюша З. (N42°57&#039;2.7&quot;E43°15&#039;43.596&quot;)+Дыхсу (N 42°57&#039;20&quot; E 43°15&#039;19&quot;)", "link" : "'https://westra.ru/passes/Passes/3734", "coords" : "(43.26211 42.95075 0)"
+}, 
+{
+"name" : "пер. Катюша Вост.", "cathegory" : "2Б", "height" : "3650", "heels_type" : "лд", "connects_with" : "ледн.№108 (ледн.Фытнаргин (Агаштан)), р.Фытнаргин (р.Карасу, р.Черек Балкарский) - зап.ветвь ледн.Фытнаргин (Агаштан, №107), р.Фытнаргин (р.Карасу, р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/15548", "coords" : "(43.26905 42.9485 0)"
+}, 
+{
+"name" : "пер. Каярта", "cathegory" : "2Б", "height" : "4000", "heels_type" : "", "connects_with" : "лед. Каярта З. (р.Орелю, приток р.Тютюсу) - лед.Ю.Кенчат (р.Джайлык)", "link" : "'https://westra.ru/passes/Passes/9460", "coords" : "(42.93599 43.27674 0)"
+}, 
+{
+"name" : "пер. Керанзы Верхний", "cathegory" : "2Б", "height" : "3601", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/7568", "coords" : "(42.67009519240001 43.403531976 0)"
+}, 
+{
+"name" : "пер. Китлод", "cathegory" : "2Б", "height" : "3700", "heels_type" : "ск-лд", "connects_with" : "лед.Кулак - лед.Китлод", "link" : "'https://westra.ru/passes/Passes/327", "coords" : "(42.94764 43.12512 0)"
+}, 
+{
+"name" : "пер. Кич", "cathegory" : "2Б", "height" : "3784", "heels_type" : "ск-ос-сн-лд", "connects_with" : "ледн.Кичша, р.Кистинка (р.Терек) - р.Шандон (р.Армхи, р.Терек)", "link" : "'https://westra.ru/passes/Passes/2339", "coords" : "(44.749438333333 42.711081666667 0)"
+}, 
+{
+"name" : "пер. Кичи-Муруджу Северный", "cathegory" : "2Б", "height" : "3500", "heels_type" : "ск", "connects_with" : "р.Кичи-Муруджу - ледн.Даут Юго-Вост., р.Махар", "link" : "'https://westra.ru/passes/Passes/3547", "coords" : "(41.8931666667 43.28028333330001 0)"
+}, 
+{
+"name" : "пер. Кичкидар", "cathegory" : "2Б", "height" : "4200", "heels_type" : "сн-лд", "connects_with" : "лед.З.Юном (р.Куллум-кол) - лед.Чегем (р.Башильаузсу). Между в.Юномкара и Кичкидар. Различают две седловины Кичкидар С. и Ю.", "link" : "'https://westra.ru/passes/Passes/35", "coords" : "(42.883119444444 43.229777777778 0)"
+}, 
+{
+"name" : "пер. Комито Зап.", "cathegory" : "2Б", "height" : "3705", "heels_type" : "сн-лд-ск", "connects_with" : "ледн.Комитодах, р.Чешойламуархи (р.Шароаргун) - ЛП р.Хаисхеви (р.Пирикительская Алазани, р.Андийское Койсу)", "link" : "'https://westra.ru/passes/Passes/2459", "coords" : "(45.587683333333 42.537683333333 0)"
+}, 
+{
+"name" : "пер. Комсомола Украины Вост.", "cathegory" : "2Б*", "height" : "3940", "heels_type" : "ск-лд", "connects_with" : "ПП ледн.Гюльчи, р.Измыльцысу (р.Черек Балкарский) - ледн.Рцывашки Зап., р.Рцывашки", "link" : "'https://westra.ru/passes/Passes/3850", "coords" : "(43.392933 43.01345 0)"
+}, 
+{
+"name" : "пер. Комсомола Украины Зап.", "cathegory" : "2Б*", "height" : "3800", "heels_type" : "ск-лд", "connects_with" : "ледн.Гюльчи, р.Измыльцысу (р.Черек Балкарский) - ледн.Рцывашки Зап., р.Рцывашки", "link" : "'https://westra.ru/passes/Passes/3851", "coords" : "(43.391101666667 43.006916666667 0)"
+}, 
+{
+"name" : "пер. Кулак", "cathegory" : "2Б", "height" : "3750", "heels_type" : "лд-ск", "connects_with" : "лед.Дзынал - лед.Китлод", "link" : "'https://westra.ru/passes/Passes/3706", "coords" : "(42.913677777778 43.119361111111 0)"
+}, 
+{
+"name" : "пер. Купол Воолагаты", "cathegory" : "2Б", "height" : "4300", "heels_type" : "сн-лд", "connects_with" : "Караугомское плато - плечо Воологаты - ледн.Гулар (ледн.Караугом), р.Караугом", "link" : "'https://westra.ru/passes/Passes/3888", "coords" : "(43.77413 42.7999 0)"
+}, 
+{
+"name" : "пер. Курсантов", "cathegory" : "2Б", "height" : "3800", "heels_type" : "ск-лд", "connects_with" : "лед.Квамп - лед. Ю.Шхельдинский", "link" : "'https://westra.ru/passes/Passes/3683", "coords" : "(42.601157 43.159847 0)"
+}, 
+{
+"name" : "пер. Ласхедар", "cathegory" : "2Б", "height" : "3510", "heels_type" : "лд-ск", "connects_with" : "лед.Башиль - лед.Ласхедар (лед.Твибер)", "link" : "'https://westra.ru/passes/Passes/322", "coords" : "(42.88848 43.15786 0)"
+}, 
+{
+"name" : "пер. Ледовый", "cathegory" : "2Б", "height" : "3850", "heels_type" : "ск-сн-лд", "connects_with" : "р.Шатилисцкали (р.Аргун) - ледн.Вагичу Зап., р.Вагичу (р.Мешехи, р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2389", "coords" : "(45.08347000000001 42.710553333333 0)"
+}, 
+{
+"name" : "пер. Лико Донченты", "cathegory" : "2Б*", "height" : "3960", "heels_type" : "", "connects_with" : "р. Цариутдон - р. Мидаграбиндон", "link" : "'https://westra.ru/passes/Passes/3994", "coords" : "(44.3211739792 42.75576362779999 0)"
+}, 
+{
+"name" : "пер. Лихорский", "cathegory" : "2Б", "height" : "4000", "heels_type" : "сн-лд-ос", "connects_with" : "ледн.Тебулосский Сев., р.Маистыхи (р.Аргун) - ледн.Тебулосский Южн., р.Квахидисцкали (р.Пирикительская Алазани, р.Андийское Койсу)", "link" : "'https://westra.ru/passes/Passes/2432", "coords" : "(45.323021666667 42.565898333333 0)"
+}, 
+{
+"name" : "пер. Малыш", "cathegory" : "2Б", "height" : "3892", "heels_type" : "ск-ос-сн-лд", "connects_with" : "ледн.Доносский (вост.ветвь), ПП р.Данейламхи (р.Шароаргун) - ЛП р.Харгабахк (р.Хуландойахк, р.Шароаргун)", "link" : "'https://westra.ru/passes/Passes/2472", "coords" : "(45.695458333333 42.516531666667 0)"
+}, 
+{
+"name" : "пер. Марух Низкий", "cathegory" : "2Б", "height" : "3250", "heels_type" : "сн-лд", "connects_with" : "ледн.Марух-кая Вост. (ледн.Аксаут Зап.), р.Аксаут - ледн.Марух-кая, р.Марух Южн.", "link" : "'https://westra.ru/passes/Passes/3472", "coords" : "(41.409358333333 43.335727777778 0)"
+}, 
+{
+"name" : "пер. Марух Южн", "cathegory" : "2Б", "height" : "3500", "heels_type" : "сн-лд-ск-ос", "connects_with" : "ледн. Марух Южн., ЛП р.Марух Южн. (р.Чхалта)  - ледн.Марух-кая, ЛП р.Марух Южн. (р.Чхалта)", "link" : "'https://westra.ru/passes/Passes/15485", "coords" : "(41.40336 43.346583333333 0)"
+}, 
+{
+"name" : "пер. Минский", "cathegory" : "2Б*", "height" : "3196", "heels_type" : "сн-лд", "connects_with" : "ледн.Аманауз, р.Аманауз (р.Псыш, р.Зеленчук Бол.) - р.Аманауз", "link" : "'https://westra.ru/passes/Passes/10975", "coords" : "(41.113355555556 43.417527777778 0)"
+}, 
+{
+"name" : "пер. МИФИ Зап.", "cathegory" : "2Б", "height" : "3293", "heels_type" : "сн-лд-ск-ос", "connects_with" : "р.Рынджи (р.Даут) - р.Кичи-Муруджу", "link" : "'https://westra.ru/passes/Passes/15422", "coords" : "(41.86335 43.3046 0)"
+}, 
+{
+"name" : "пер. Мнаиси", "cathegory" : "2Б", "height" : "4380", "heels_type" : "лд", "connects_with" : "лед.Мнаиси - лед.Майли", "link" : "'https://westra.ru/passes/Passes/3999", "coords" : "(44.487773 42.703946 0)"
+}, 
+{
+"name" : "пер. Мориса Тореза", "cathegory" : "2Б", "height" : "3892", "heels_type" : "сн-лд", "connects_with" : "Вост.ветвь ледн.Суган Сев., р.Псыгансу - Зап.ветвь ледн.Нахашбита, р.Псыгансу", "link" : "'https://westra.ru/passes/Passes/3854", "coords" : "(43.45764 42.98379 0)"
+}, 
+{
+"name" : "пер. Мукал-Мкяра Южный", "cathegory" : "2Б*", "height" : "3800", "heels_type" : "ск-сн-лд", "connects_with" : "ледн.Мукал, р.Мукал (р.Кыртык, р.Баксан) - ледн.Мкяра Вост., р.Мкяра (р.Кыртык, р.Баксан)", "link" : "'https://westra.ru/passes/Passes/15390", "coords" : "(42.621483333333 43.323066666667 0)"
+}, 
+{
+"name" : "пер. Мурзук", "cathegory" : "2Б", "height" : "3208", "heels_type" : "лд-ск", "connects_with" : "ледн.Индрюкой, р.Кичкинекол Зап. (р.Индрюкой) - р.Андархуа (р.Сакен)", "link" : "'https://westra.ru/passes/Passes/3571", "coords" : "(42.05682 43.19554 0)"
+}, 
+{
+"name" : "пер. Нева", "cathegory" : "2Б*", "height" : "3600", "heels_type" : "сн-лд", "connects_with" : "лед.Чегеткара (р.Азау) - лед.Медвежий (р.Донгузорун) Восточнее в.Чиперазау", "link" : "'https://westra.ru/passes/Passes/3652", "coords" : "(42.45275 43.24323 0)"
+}, 
+{
+"name" : "пер. Новичков Верхн.", "cathegory" : "2Б", "height" : "3868", "heels_type" : "сн-лд-ск", "connects_with" : "ледн.№245е (ледн.Оиш), р.Цаннер (р.Мульхра) - ледн.Нагеб (№251а), р.Цаннер (р.Мульхра)", "link" : "'https://westra.ru/passes/Passes/15551", "coords" : "(42.967133 43.042833 0)"
+}, 
+{
+"name" : "пер. Новичков Центральный", "cathegory" : "2Б", "height" : "3780", "heels_type" : "сн-лд-ск", "connects_with" : "ледн.№245е (ледн.Оиш), р.Цаннер (р.Мульхра) - ледн.Нагеб (№251а), р.Цаннер (р.Мульхра)", "link" : "'https://westra.ru/passes/Passes/12599", "coords" : "(42.96285 43.043783 0)"
+}, 
+{
+"name" : "пер. НПИ", "cathegory" : "2Б", "height" : "4000", "heels_type" : "сн-лд", "connects_with" : "лед.Бартуй - лед.Центр.Цихварга", "link" : "'https://westra.ru/passes/Passes/3805", "coords" : "(43.62722 42.81215 0)"
+}, 
+{
+"name" : "пер. Олимпийский", "cathegory" : "2Б", "height" : "4020", "heels_type" : "сн-лд", "connects_with" : "лед.Киртишо или лед.Бартуй - лед.Фастаг", "link" : "'https://westra.ru/passes/Passes/3807", "coords" : "(43.63888 42.80935 0)"
+}, 
+{
+"name" : "пер. Ортава", "cathegory" : "2Б", "height" : "3620", "heels_type" : "сн-лд-ск-ос", "connects_with" : "ледн.Качу, ПП р.Шароаргун - исток р.Хаисхеви (р.Пирикительская Алазани, р.Андийское Койсу)", "link" : "'https://westra.ru/passes/Passes/2457", "coords" : "(45.55878 42.541185 0)"
+}, 
+{
+"name" : "пер. Плечо Вуллея", "cathegory" : "2Б", "height" : "4025", "heels_type" : "", "connects_with" : "массив находится в западном отроге ГКХ, между ледниками Двойной и Шхельдинский", "link" : "'https://westra.ru/passes/Passes/14639", "coords" : "(42.67781 43.16515 0)"
+}, 
+{
+"name" : "пер. Плечо Орелю", "cathegory" : "2Б", "height" : "3960", "heels_type" : "сн-лд", "connects_with" : "верховье долины реки Тютюсу с левым истоком р. Джайлык- су (р.Башильаузсу)", "link" : "'https://westra.ru/passes/Passes/15483", "coords" : "(42.925197222222 43.267847222222 0)"
+}, 
+{
+"name" : "пер. Плечо Фытнаргина", "cathegory" : "2Б*", "height" : "3878", "heels_type" : "сн-лд", "connects_with" : "с западной ветви ледника Фытнаргин (река Карасу, Черек-Балкарский) на ледник Фытнаргин западный (ледники Айлама, Дыхсу).", "link" : "'https://westra.ru/passes/Passes/14734", "coords" : "(43.243133333333 42.943766666667 0)"
+}, 
+{
+"name" : "пер. Псыш", "cathegory" : "2Б*", "height" : "3350", "heels_type" : "лд-ск", "connects_with" : "ледн.Псыш, р.Псыш - ледн.Скеу, р.Бзыбь", "link" : "'https://westra.ru/passes/Passes/3389", "coords" : "(41.199911111111 43.382216666667 0)"
+}, 
+{
+"name" : "пер. Птица", "cathegory" : "2Б*", "height" : "4250", "heels_type" : "сн-лд", "connects_with" : "вост.исток ледн.Кундюм-Мижирги, р.Мижирги (р.Черек Безенгийский) - ледн.Уллуауз, р.Думала (р.Черек Безенгийский)", "link" : "'https://westra.ru/passes/Passes/96", "coords" : "(43.215099 43.063106 0)"
+}, 
+{
+"name" : "пер. Пшиш", "cathegory" : "2Б", "height" : "3350", "heels_type" : "", "connects_with" : "р. Аманауз - зап. часть ледн. Наур (р. Псыш)", "link" : "'https://westra.ru/passes/Passes/10980", "coords" : "(41.154525 43.403572222222 0)"
+}, 
+{
+"name" : "пер. РЕНЕ", "cathegory" : "2Б", "height" : "3010", "heels_type" : "ск", "connects_with" : "р.Имеретинка - р.Инпси (Цахвоа)", "link" : "'https://westra.ru/passes/Passes/15123", "coords" : "(40.739663888889 43.609202777778 0)"
+}, 
+{
+"name" : "пер. Рожана", "cathegory" : "2Б", "height" : "3500", "heels_type" : "сн-лд", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/12481", "coords" : "(42.492456 42.937826 0)"
+}, 
+{
+"name" : "пер. Розмысл", "cathegory" : "2Б", "height" : "3950", "heels_type" : "ск-сн-лд", "connects_with" : "р.Кхонисцкали (р.Андаки, р.Аргун) - ледн.Маисти, ЛП р.Маистыхи (р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2439", "coords" : "(45.284226666667 42.599638333333 0)"
+}, 
+{
+"name" : "пер. РОМ", "cathegory" : "2Б", "height" : "3842", "heels_type" : "сн-лд", "connects_with" : "лед.Тютюн - лед.Герты", "link" : "'https://westra.ru/passes/Passes/3729", "coords" : "(43.25929 43.04663 0)"
+}, 
+{
+"name" : "пер. Ронкетти", "cathegory" : "2Б*", "height" : "3880", "heels_type" : "ск-лд", "connects_with" : "ледн.Цей Южн. (ледн.Цей), р.Цейдон - ледн.Мамисон Зап., р.Мамихдон (р.Ардон)", "link" : "'https://westra.ru/passes/Passes/3922", "coords" : "(43.815277777778 42.734166666667 0)"
+}, 
+{
+"name" : "пер. Россия", "cathegory" : "2Б*", "height" : "3700", "heels_type" : "лд-ск", "connects_with" : "р. Сбайдон, р. Б.Лиахви - р. Терек", "link" : "'https://westra.ru/passes/Passes/4078", "coords" : "(44.2272390172 42.607769885 0)"
+}, 
+{
+"name" : "пер. Салай", "cathegory" : "2Б", "height" : "3900", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/8638", "coords" : "(44.17794717829999 42.7412475572 0)"
+}, 
+{
+"name" : "пер. Саудор", "cathegory" : "2Б", "height" : "3936", "heels_type" : "ск-лд", "connects_with" : "ледн.Скатыком, р.Сардидон (р.Айгамугодон) - ледн.Гулар (ледн.Караугом), р.Караугом", "link" : "'https://westra.ru/passes/Passes/3923", "coords" : "(43.76852 42.81362 0)"
+}, 
+{
+"name" : "пер. Светлячок", "cathegory" : "2Б", "height" : "3490", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/15455", "coords" : "(43.452333333333 42.891944444444 0)"
+}, 
+{
+"name" : "пер. Седло Чегема", "cathegory" : "2Б", "height" : "3950", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/539", "coords" : "(42.910088888889 43.227280555556 0)"
+}, 
+{
+"name" : "пер. Селлы", "cathegory" : "2Б*", "height" : "4250", "heels_type" : "лд", "connects_with" : "ПП вост.ветви ледн.Безенги, р.Черек Безенгийский - ледн.Крумкол (ледн.Дыхсу (Дых-Котю-Бугой)), р.Дыхсу (р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/354", "coords" : "(43.146367 43.040001 0)"
+}, 
+{
+"name" : "пер. Сематепе", "cathegory" : "2Б", "height" : "3420", "heels_type" : "ск-сн", "connects_with" : "р.Нарпуз (пр.исток р.Ялак) - плато Едигёль", "link" : "'https://westra.ru/passes/Passes/6495", "coords" : "(35.173 37.827083 0)"
+}, 
+{
+"name" : "пер. Семеновского Южный", "cathegory" : "2Б*", "height" : "3900", "heels_type" : "", "connects_with" : "лед.Тютю (р.Тютюсу) - лед.Джайлык (р.Башильаузсу)", "link" : "'https://westra.ru/passes/Passes/3695", "coords" : "(42.9048170719 43.252475127 0)"
+}, 
+{
+"name" : "пер. Сивераут Ледовый", "cathegory" : "2Б", "height" : "3640", "heels_type" : "", "connects_with" : "р.Дзамараш - р.Сивераут", "link" : "'https://westra.ru/passes/Passes/4016", "coords" : "(44.2701224796 42.691538886 0)"
+}, 
+{
+"name" : "пер. Скалистый", "cathegory" : "2Б", "height" : "3902", "heels_type" : "ск-лд", "connects_with" : "лед.Крумкол - лед.Ю. Тютюн (р.Тютюнсу). Вторая седловина Скалистый Сев.", "link" : "'https://westra.ru/passes/Passes/3731", "coords" : "(43.22945 43.01515 0)"
+}, 
+{
+"name" : "пер. Скрипака", "cathegory" : "2Б", "height" : "3987", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/8739", "coords" : "(44.15009500919999 42.75219583280001 0)"
+}, 
+{
+"name" : "пер. СОГМИ", "cathegory" : "2Б*", "height" : "4050", "heels_type" : "лд-ск", "connects_with" : "р.Укю (р.Думала, р.Черек Безенгийский) - ледн.Уллуауз, р.Думала (р.Черек Безенгийский)", "link" : "'https://westra.ru/passes/Passes/106", "coords" : "(43.236676 43.085769 0)"
+}, 
+{
+"name" : "пер. Спортивная дружба", "cathegory" : "2Б*", "height" : "4100", "heels_type" : "лд-ск", "connects_with" : "лед.Шаурту - лед.Безенги", "link" : "'https://westra.ru/passes/Passes/344", "coords" : "(43.079005555556 43.105783333333 0)"
+}, 
+{
+"name" : "пер. Средний", "cathegory" : "2Б", "height" : "3930", "heels_type" : "сн-лд", "connects_with" : "лед.Ю.Шхельдинский - лед.Ахсу (лед.Шхельды). Через п.Физкультурник", "link" : "'https://westra.ru/passes/Passes/303", "coords" : "(42.60059 43.16326 0)"
+}, 
+{
+"name" : "пер. Стамбул", "cathegory" : "2Б", "height" : "3270", "heels_type" : "ск-сн", "connects_with" : "южн.исток дол.Сыирма (верховья дол.Эмли) - дол.Адсиз (лев.исток р.Хайхайдере)", "link" : "'https://westra.ru/passes/Passes/13704", "coords" : "(35.18425 37.736833 0)"
+}, 
+{
+"name" : "пер. Сусуз", "cathegory" : "2Б", "height" : "3035", "heels_type" : "сн-ск", "connects_with" : "дол.Сусуз – р.Аксу", "link" : "'https://westra.ru/passes/Passes/13721", "coords" : "(35.291667 37.8755 0)"
+}, 
+{
+"name" : "пер. Сыирма-Кокорот", "cathegory" : "2Б", "height" : "3520", "heels_type" : "ск-сн", "connects_with" : "плато Едигёль - дол.Кокорот (лев.исток р.Аджиман).", "link" : "'https://westra.ru/passes/Passes/13722", "coords" : "(35.176417 37.774167 0)"
+}, 
+{
+"name" : "пер. ТГУ", "cathegory" : "2Б", "height" : "3700", "heels_type" : "сн-лд-ск-ос", "connects_with" : "ледн.Чаухи, ЛП р.Чаухи (р.Джута, р.Сносцкали, р.Терек) - пр.исток р.Бурсачили (р.Черная Арагви)", "link" : "'https://westra.ru/passes/Passes/15152", "coords" : "(44.792123 42.539565 0)"
+}, 
+{
+"name" : "пер. Теп В.", "cathegory" : "2Б", "height" : "4023", "heels_type" : "лд", "connects_with" : "лед.Мидаграбин - лед.Теп", "link" : "'https://westra.ru/passes/Passes/4021", "coords" : "(44.3891086181 42.70881512530001 0)"
+}, 
+{
+"name" : "пер. Тепли З.", "cathegory" : "2Б", "height" : "3920", "heels_type" : "ск-лд", "connects_with" : "лед.Нар 2 - лед.Ю.Тепли", "link" : "'https://westra.ru/passes/Passes/3966", "coords" : "(44.124447222222 42.722281944444 0)"
+}, 
+{
+"name" : "пер. Туманный", "cathegory" : "2Б", "height" : "3550", "heels_type" : "лд-ск", "connects_with" : "ледн.Джалаучат, р.Джалаучат (р.Аксаут) - р.Чхалта", "link" : "'https://westra.ru/passes/Passes/3478", "coords" : "(41.49364 43.28458 0)"
+}, 
+{
+"name" : "пер. Узловой", "cathegory" : "2Б", "height" : "4002", "heels_type" : "ск-лд", "connects_with" : "между в.в. Узловая и Сакашиль", "link" : "'https://westra.ru/passes/Passes/9689", "coords" : "(42.958108333333 43.297125 0)"
+}, 
+{
+"name" : "пер. Украина", "cathegory" : "2Б", "height" : "3660", "heels_type" : "сн-лд", "connects_with" : "лед.Адырсу (З.ветвь) - лед.Лекзыр (Центр.ветвь)", "link" : "'https://westra.ru/passes/Passes/316", "coords" : "(42.77888 43.18708 0)"
+}, 
+{
+"name" : "пер. Уллуауз", "cathegory" : "2Б*", "height" : "4300", "heels_type" : "сн-лд", "connects_with" : "ледн.Уллуауз, р.Думала (р.Черек Безенгийский) - ледн.Тютюн, р.Тютюнсу (р.Черек Балкарский)", "link" : "'https://westra.ru/passes/Passes/3721", "coords" : "(43.231765 43.045981 0)"
+}, 
+{
+"name" : "пер. Урал", "cathegory" : "2Б", "height" : "3850", "heels_type" : "сн-лд", "connects_with" : "ледн.Укю Мал. (ледн.№442), ПП р.Мижирги (р.Черек Безенгийский) - ледн.Уллуауз Сев. (ледн.№443), р.Мижирги (р.Черек Безенгийский)", "link" : "'https://westra.ru/passes/Passes/104", "coords" : "(43.2035166667 43.0845 0)"
+}, 
+{
+"name" : "пер. Фрешфильда", "cathegory" : "2Б", "height" : "4200", "heels_type" : "сн-лд", "connects_with" : "лед.Юном (р.Куллумкол) - лед.Чегем (р.Башильаузсу). Между в.Юномкара и Ору-баши", "link" : "'https://westra.ru/passes/Passes/3696", "coords" : "(42.88178 43.21966 0)"
+}, 
+{
+"name" : "пер. Фытнаргин", "cathegory" : "2Б*", "height" : "3828", "heels_type" : "лд", "connects_with" : "лед.Фытнаргин - лед.Айлама (лед.Дыхсу). Между в.Фытнаргин и Белая Незнакомка", "link" : "'https://westra.ru/passes/Passes/3735", "coords" : "(43.23375 42.93535 0)"
+}, 
+{
+"name" : "пер. Хазны-Шевченко", "cathegory" : "2Б*", "height" : "3710", "heels_type" : "сн-лд", "connects_with" : "лед.Нахашбита - лед.Хазны (обход через пер.Оксаны)", "link" : "'https://westra.ru/passes/Passes/3877", "coords" : "(43.504583333333 42.971433333333 0)"
+}, 
+{
+"name" : "пер. Хакель", "cathegory" : "2Б", "height" : "3300", "heels_type" : "лд", "connects_with" : "ледн.Хакель, р.Клухор - р.Клыч", "link" : "'https://westra.ru/passes/Passes/3502", "coords" : "(41.851831666667 43.214371666667 0)"
+}, 
+{
+"name" : "пер. Хакель-Ачапара", "cathegory" : "2Б", "height" : "3250", "heels_type" : "лд-сн-ск", "connects_with" : "ледн.Хакель, р.Клухор - р.Ачапара", "link" : "'https://westra.ru/passes/Passes/3501", "coords" : "(41.837053333333 43.21262 0)"
+}, 
+{
+"name" : "пер. Хакель-Чотча", "cathegory" : "2Б", "height" : "3200", "heels_type" : "лд-ск", "connects_with" : "ледн.Хакель - р.Чотча", "link" : "'https://westra.ru/passes/Passes/3517", "coords" : "(41.828681666667 43.218345 0)"
+}, 
+{
+"name" : "пер. Харгаблам", "cathegory" : "2Б", "height" : "3750", "heels_type" : "ск-ос-сн-лд", "connects_with" : "лев.исток р.Харгабахк (р.Хуландойахк, р.Шароаргун) - ЛП р.Чигосцкали (р.Пирикительская Алазани, р.Андийское Койсу)", "link" : "'https://westra.ru/passes/Passes/2473", "coords" : "(45.68968 42.49614 0)"
+}, 
+{
+"name" : "пер. Хецкавара Зап.", "cathegory" : "2Б", "height" : "3080", "heels_type" : "", "connects_with" : "", "link" : "'https://westra.ru/passes/Passes/15062", "coords" : "(41.787658333333 43.216530555556 0)"
+}, 
+{
+"name" : "пер. Химик", "cathegory" : "2Б*", "height" : "3978", "heels_type" : "", "connects_with" : "лед. Юном - д.р. Адырсу, между в. Химик и в. Адырсубаши. Две седловины", "link" : "'https://westra.ru/passes/Passes/14653", "coords" : "(42.860683333333 43.209283333333 0)"
+}, 
+{
+"name" : "пер. ХКТ", "cathegory" : "2Б", "height" : "3950", "heels_type" : "сн-лд", "connects_with" : "Зап. ветвь Караугомского плато - Ц. ветвь Караугомского плато. С.  пика Бокос.", "link" : "'https://westra.ru/passes/Passes/13220", "coords" : "(43.74201 42.77088 0)"
+}, 
+{
+"name" : "пер. Хуналы Юж.", "cathegory" : "2Б", "height" : "3950", "heels_type" : "", "connects_with" : "л. Хуналы, зап. ветвь  - л. Каярта", "link" : "'https://westra.ru/passes/Passes/14663", "coords" : "(42.95049 43.29823 0)"
+}, 
+{
+"name" : "пер. Цазги", "cathegory" : "2Б", "height" : "3786", "heels_type" : "ск-лд", "connects_with" : "лед. Цазги -лед.С.Тепли", "link" : "'https://westra.ru/passes/Passes/3971", "coords" : "(44.1503876319 42.76071237559999 0)"
+}, 
+{
+"name" : "пер. Цараль", "cathegory" : "2Б", "height" : "3890", "heels_type" : "ск-лд", "connects_with" : "р.Казикумухское Койсу, лед.Балиал, хр.Чукулу - р.Арцелинех, р.Бурши", "link" : "'https://westra.ru/passes/Passes/2706", "coords" : "(47.03616 41.91686 0)"
+}, 
+{
+"name" : "пер. Цариут", "cathegory" : "2Б", "height" : "3815", "heels_type" : "ск-лд", "connects_with" : "р.Дзамараш - р.Цариутдон", "link" : "'https://westra.ru/passes/Passes/4024", "coords" : "(44.2969335328 42.7414370297 0)"
+}, 
+{
+"name" : "пер. Цата", "cathegory" : "2Б", "height" : "3893", "heels_type" : "ск-лд", "connects_with" : "лед.Колка - р.Цата", "link" : "'https://westra.ru/passes/Passes/4025", "coords" : "(44.4251225289 42.7477308311 0)"
+}, 
+{
+"name" : "пер. Цити", "cathegory" : "2Б", "height" : "3718", "heels_type" : "лд-ск", "connects_with" : "лед.Мидаграбин - р.Ресикомдон", "link" : "'https://westra.ru/passes/Passes/4026", "coords" : "(44.3393303858 42.7150158886 0)"
+}, 
+{
+"name" : "пер. Цихварга", "cathegory" : "2Б*", "height" : "3670", "heels_type" : "ск-лд", "connects_with" : "лед.Бартуй - лед.Фастаг", "link" : "'https://westra.ru/passes/Passes/3819", "coords" : "(43.64278 42.81687 0)"
+}, 
+{
+"name" : "пер. Чатын С.", "cathegory" : "2Б*", "height" : "3660", "heels_type" : "ск-лд", "connects_with" : "лед.Шхельды - Чатынское плато. К югу от п.Вуллея", "link" : "'https://westra.ru/passes/Passes/309", "coords" : "(42.68014 43.16329 0)"
+}, 
+{
+"name" : "пер. Чатын Южный", "cathegory" : "2Б", "height" : "3650", "heels_type" : "ск-лд", "connects_with" : "лед.Шхельды - Чатынское плато. Восточнее п.Щуровского", "link" : "'https://westra.ru/passes/Passes/3679", "coords" : "(42.67785 43.15395 0)"
+}, 
+{
+"name" : "пер. Чаухи Вост.", "cathegory" : "2Б*", "height" : "3422", "heels_type" : "сн-ск-ос", "connects_with" : "лев.исток р.Бурсачили (р.Черная Арагви) - р.Вуделаури (р.Рошка, р.Кмости, р.Хевсурская Арагви)", "link" : "'https://westra.ru/passes/Passes/2403", "coords" : "(44.81834 42.53894 0)"
+}, 
+{
+"name" : "пер. Чегемский", "cathegory" : "2Б", "height" : "4200", "heels_type" : "сн-ос", "connects_with" : "лед.З.Юном (р.Куллум-кол) - лед.Чегем (р.Башильаузсу)", "link" : "'https://westra.ru/passes/Passes/34", "coords" : "(42.8852 43.23448 0)"
+}, 
+{
+"name" : "пер. Четырех Западный", "cathegory" : "2Б", "height" : "3750", "heels_type" : "сн-лд", "connects_with" : "ледн.Уларг Верхн., р.Сонгутидон (р.Айгамугодон) - ледн.Четырех, р.Уилпатинка (р.Цейдон)", "link" : "'https://westra.ru/passes/Passes/16118", "coords" : "(43.83015 42.79233 0)"
+}, 
+{
+"name" : "пер. Чолла", "cathegory" : "2Б", "height" : "3700", "heels_type" : "", "connects_with" : "д.р. Челло (р. Лайльчала, р. Ингури) - ледн. Лайла (р. Лайла, р. Хумпрери, р.Ингури)", "link" : "'https://westra.ru/passes/Passes/15831", "coords" : "(42.54864 42.92908 0)"
+}, 
+{
+"name" : "пер. Чотча", "cathegory" : "2Б", "height" : "3200", "heels_type" : "лд-ск", "connects_with" : "ледн.Чотча, р.Чотча - р.Ачапара", "link" : "'https://westra.ru/passes/Passes/3499", "coords" : "(41.810683333333 43.204066666667 0)"
+}, 
+{
+"name" : "пер. Чотча Вост.", "cathegory" : "2Б", "height" : "3250", "heels_type" : "лд-ск", "connects_with" : "ледн.Чотча, р.Чотча - р.Ачапара", "link" : "'https://westra.ru/passes/Passes/3500", "coords" : "(41.81695 43.209566666667 0)"
+}, 
+{
+"name" : "пер. Чугуш Западный", "cathegory" : "2Б", "height" : "2700", "heels_type" : "лд-ос", "connects_with" : "р.Бирюзовая - р.Чессу", "link" : "'https://westra.ru/passes/Passes/3331", "coords" : "(40.18866666669999 43.80363333330001 0)"
+}, 
+{
+"name" : "пер. Шапошникова", "cathegory" : "2Б", "height" : "2450", "heels_type" : "сн-ск-ос", "connects_with" : "р.Киша - р.Лаура (р.Мзымта)", "link" : "'https://westra.ru/passes/Passes/3312", "coords" : "(40.333619554 43.7751310467 0)"
+}, 
+{
+"name" : "пер. Шатили", "cathegory" : "2Б*", "height" : "3748", "heels_type" : "ск-сн-лд", "connects_with" : "ледн.Берхи, р.Берхи (р.Гулойхи, р.Асса) - р.Шатилисцкали (р.Аргун)", "link" : "'https://westra.ru/passes/Passes/2387", "coords" : "(45.0733 42.706406666667 0)"
+}, 
+{
+"name" : "пер. Шау", "cathegory" : "2Б*", "height" : "4200", "heels_type" : "ск-лд", "connects_with" : "лед.Колка - лед.Мидаграбин", "link" : "'https://westra.ru/passes/Passes/4028", "coords" : "(44.4132969861 42.7380234089 0)"
+}, 
+{
+"name" : "пер. Шаурту-Цаннер", "cathegory" : "2Б*", "height" : "3850", "heels_type" : "сн-лд", "connects_with" : "лед.Шаурту - лед.Цан-нер. Юго-восточнее в.Цаннер", "link" : "'https://westra.ru/passes/Passes/330", "coords" : "(43.02933 43.09644 0)"
+}, 
+{
+"name" : "пер. Шино", "cathegory" : "2Б", "height" : "3731", "heels_type" : "ск-ос-сн-лд", "connects_with" : "р.Шиносхеви (р.Сносцкали, р.Терек) - р.Кистинка (р.Терек)", "link" : "'https://westra.ru/passes/Passes/2329", "coords" : "(44.705408333333 42.653251666667 0)"
+}, 
+{
+"name" : "пер. Широкий", "cathegory" : "2Б", "height" : "3750", "heels_type" : "ск-ос-сн-лд", "connects_with" : "р.Харгабахк (р.Хуландойахк, р.Шароаргун) - р.Чигосцкали (р.Пирикительская Алазани, р.Андийское Койсу)", "link" : "'https://westra.ru/passes/Passes/2475", "coords" : "(45.70538999999999 42.47881 0)"
+}, 
+{
+"name" : "пер. Школьный", "cathegory" : "2Б", "height" : "3200", "heels_type" : "лд-ск", "connects_with" : "р.Птыш Южн. - р.Хецквара", "link" : "'https://westra.ru/passes/Passes/3553", "coords" : "(41.7715 43.215171666667 0)"
+}, 
+{
+"name" : "пер. Шови Центр.", "cathegory" : "2Б", "height" : "3880", "heels_type" : "сн-лд", "connects_with" : "Караугомское плато - ледн.Бубис Центр., р.Бубисцкали (р.Чанчахи)", "link" : "'https://westra.ru/passes/Passes/3893", "coords" : "(43.75966 42.76464 0)"
+}, 
+{
+"name" : "пер. Шоколадный", "cathegory" : "2Б*", "height" : "3538", "heels_type" : "", "connects_with" : "д.р. Мырды - лед. Большой Кичкинекол (д.р. Кичкинекол)", "link" : "'https://westra.ru/passes/Passes/15890", "coords" : "(42.16265 43.22855 0)"
+}, 
+{
+"name" : "пер. Щель Гюльчи", "cathegory" : "2Б", "height" : "3530", "heels_type" : "ск-ос", "connects_with" : " в западной части Суганского хребта, в северо-западном гребне вершины Рцывашки, ведет из безымянного ущелья под перевалом Щель Гюльчи на ледник Гюльчи. Перевал Щель Гюльчи впервые пройден в 1980 г. группой Кургузова И.Л.", "link" : "'https://westra.ru/passes/Passes/14630", "coords" : "(43.35482 43.009678333333 0)"
+}, 
+{
+"name" : "пер. Эдена В.", "cathegory" : "2Б", "height" : "3580", "heels_type" : "сн-лд", "connects_with" : "лед.З. Зопхито - лед.З. Эдена", "link" : "'https://westra.ru/passes/Passes/3825", "coords" : "(43.4013888889 42.8952777778 0)"
+}, 
+{
+"name" : "пер. Эдена Центр.", "cathegory" : "2Б", "height" : "3800", "heels_type" : "сн-лд", "connects_with" : "лед.В. Штулу - лед.З. Эдена", "link" : "'https://westra.ru/passes/Passes/3827", "coords" : "(43.39503 42.89768 0)"
+}, 
+{
+"name" : "пер. Эдена Ю.", "cathegory" : "2Б", "height" : "3610", "heels_type" : "", "connects_with" : "лед.З. Эдена - лед.В. Эдена (Грузия)", "link" : "'https://westra.ru/passes/Passes/3828", "coords" : "(43.39984 42.88015 0)"
+}, 
+{
+"name" : "пер. ЮНЦ", "cathegory" : "2Б*", "height" : "3540", "heels_type" : "сн-лд-ск", "connects_with" : "центр.исток р.Джолсузчат (р.Махар) - р.Кичи-Муруджу", "link" : "'https://westra.ru/passes/Passes/14589", "coords" : "(41.895847222222 43.27355 0)"
+}, 
+{
+"name" : "пер. Юсеньги Сев.", "cathegory" : "2Б", "height" : "3500", "heels_type" : "лд-ск", "connects_with" : "р.Юсеньги - лед. Шхельды. В 400 м севернее пер.Юсеньги Ю.", "link" : "'https://westra.ru/passes/Passes/3677", "coords" : "(42.61921 43.19117 0)"
+}, 
+{
+"name" : "пер. Юсеньги Ю.", "cathegory" : "2Б", "height" : "3850", "heels_type" : "лд-ск", "connects_with" : "р.Юсеньги - лед.Шхельды", "link" : "'https://westra.ru/passes/Passes/3676", "coords" : "(42.608222222222 43.186583333333 0)"
+}
+]
+}

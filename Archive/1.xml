@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+    <Document>
+        <name>Каталог перевалов</name>
+        <Snippet>
+            <![CDATA[]]>
+        </Snippet>
+        <description>
+            <![CDATA[Открытый проект турклуба Вестра]]>
+        </description>
+        <Style id="style_pass_1a">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_1a.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_1b">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_1b.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_2a">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_2a.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_2b">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_2b.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_3a">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_3a.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_3b">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_3b.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_nc">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_nc.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_uk">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_uk.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="style_pass_mnt2">
+            <BalloonStyle>
+                <text>
+                    <![CDATA[<table><tr><td><a href='https://westra.ru/passes/'><img src='https://westra.ru/passes/kml/images/westra.png' width='79' height='60' alt='Вестра' /></a></td><td valign='middle'><strong><font size='5' color='#003399'>Каталог перевалов</font></strong></td></tr></table>$[description]]]>
+                </text>
+            </BalloonStyle>
+            <IconStyle>
+                <scale>1.05</scale>
+                <Icon>
+                    <href>https://westra.ru/passes/kml/icons/pass_mnt2.png</href>
+                </Icon>
+                <hotSpot x="32" y="1" xunits="pixels" yunits="pixels" />
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.85</scale>
+            </LabelStyle>
+        </Style>
+    </Document>
+</kml>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+    <NetworkLink>
+        <name>Каталог перевалов</name>
+        <Link>
+            <href>http://westra.ru/passes/kml/main.kmz</href>
+            <refreshMode>onInterval</refreshMode>
+            <refreshInterval>356404</refreshInterval>
+        </Link>
+    </NetworkLink>
+</kml>
